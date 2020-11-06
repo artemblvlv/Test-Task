@@ -1,0 +1,164 @@
+doctype html
+html(lang="ru")
+    head
+        title Отчёт
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="style.css")
+    body
+        div.container 
+            div.filter
+                div.filter__help-text Enter inventory number, guid or bims id
+                div.filter__wrapper
+                    input(placeholder="" class="filter__device-search")
+                    div.filer__button-background
+                        button.filter__search-button Search
+            div.divice
+                div.divice__actions
+                        div.divice__info
+                            div.divice__logo
+                            div.divice__name Аналитические весы#[br] OHAUS Adventurer#[br] АХ324 (B715976163)
+                        div.divice__report-type
+                            div.select
+                                select(class="divice__select-list")
+                                    option(value="1") 1 month
+                                    option(value="2") 2 months
+                                    option(value="3") 3 months
+                                    option(value="4") 4 months
+                                    option(value="5") 5 months
+                                    option(value="6") 6 months
+                                    option(value="7") 7 months
+                                    option(value="8") 8 months
+                                    option(value="9") 9 months
+                                    option(value="10") 10 months
+                                    option(value="11") 11 months
+                                    option(value="12") 12 months
+                            div.divice__radio-button
+                                input(type="radio", class="divice__radio-input", id="r1", name="radio")
+                                label.divice__radio-label(for="r1") Calibration
+                            div.divice__radio-button
+                                input(type="radio", class="divice__radio-input", id="r2", name="radio")
+                                label.divice__radio-label(for="r2") Measuring
+                            div.divice__radio-button
+                                input(type="radio", class="divice__radio-input", id="r3", name="radio")
+                                label.divice__radio-label(for="r3") Using                  
+                            button.divice__report-button Generate report
+                div.divice__information
+                    div.divice__text-field
+                        span.divice__grey-text Тип оборудования: 
+                            span.divice__black-text Весы
+                        span.divice__grey-text Статус: 
+                            span.divice__black-text Готов к работе
+                        span.divice__grey-text Изготовитель:  
+                            span.divice__black-text Ohaus
+                        span.divice__grey-text Модель:  
+                            span.divice__black-text AX-123
+                        span.divice__grey-text Ответственное подразделение (ремонт): 
+                            span.divice__black-text Группа обслуживания#[br] лабораторного оборудования
+                        span.divice__grey-text Эксплуатирующее подразделение: 
+                            span.divice__black-text Химико-аналитическая лаборатория 2.0
+                        span.divice__grey-text МОЛ: 
+                            span.divice__black-text Иванов Иван Иванович
+                        span.divice__grey-text Территория: 
+                            span.divice__black-text г. Санкт-Петербург (Нойдорф)
+                        span.divice__grey-text Серийный номер: 
+                            span.divice__black-text B715976163
+                        span.divice__grey-text GUID: 
+                            span.divice__blue-text 508b2a71-662e-4983-ae0c-3cb0c1cd21c5
+                        span.divice__grey-text Bims ID: 
+                            span.divice__blue-text 49db8db1-585f-4b9e-bbf0-8a59698edc8b
+                        span.divice__grey-text Tam:  
+                            span.divice__blue-text А-001234      
+            div.report
+                h1 Calibration report
+                div.report__wrapper
+                    div.report__data-column
+                        div.report__header Date
+                        div.report__date 04.10.19#[br]10:23
+                        div.report__date 04.10.19#[br]10:23
+                        div.report__date 04.10.19#[br]10:23
+                        div.report__date 04.10.19#[br]10:23
+                    div.report__data-and-user-column
+                        div.report__header Date, User
+                        div.report__date 04.10.19#[br]10:23
+                            div.report__name Иванов Генадий Петрович
+                        div.report__date 04.10.19#[br]10:23
+                            div.report__name Петров Иван Генадьевич
+                        div.report__date 04.10.19#[br]10:23
+                            div.report__name Петров Генадий Иванович
+                        div.report__date 04.10.19#[br]10:23    
+                            div.report__name Генадьев Иван Петрович
+                    div.report__solutions-column
+                        div.report__header Used buffer solutions
+                        div.report__solutions В1: № 2000460789536: pH 1.09#[br]В2: № 2000460789536: pH 2.00#[br]В3: № 2000460789536: pH 4.01#[br]В4: № 2000460789536: pH 7.00#[br]В5: № 2000460789536: pH 9.21
+                        div.report__solutions В1: № 2000460789536: pH 1.09#[br]В2: № 2000460789536: pH 2.00#[br]В3: № 2000460789536: pH 4.01#[br]В4: № 2000460789536: pH 7.00#[br]В5: № 2000460789536: pH 9.21
+                        div.report__solutions В1: № 2000460789536: pH 1.09#[br]В2: № 2000460789536: pH 2.00#[br]В3: № 2000460789536: pH 4.01#[br]В4: № 2000460789536: pH 7.00#[br]В5: № 2000460789536: pH 9.21
+                        div.report__solutions В1: № 2000460789536: pH 1.09#[br]В2: № 2000460789536: pH 2.00#[br]В3: № 2000460789536: pH 4.01#[br]В4: № 2000460789536: pH 7.00#[br]В5: № 2000460789536: pH 9.21
+                    div.report__slope-column
+                        div.report__header Slope, %#[br]Norm 95-105
+                        div.report__value 98.7
+                            div.report__img
+                        div.report__value 98.7
+                            div.report__img
+                        div.report__value 98.7
+                            div.report__img
+                        div.report__value 90.1
+                            div.report__error
+                    div.report__offset-column
+                        div.report__header Offset, mV#[br]Norm ±(0-20)
+                        div.report__value -0.3
+                            div.report__img
+                        div.report__value -0.3
+                            div.report__img
+                        div.report__value -0.3
+                            div.report__img
+                        div.report__value -0.5
+                            div.report__img
+                            
+                    div.report__slope-offset-mobile
+                        div.report__header Used buffer solutions
+                        div.report__solutions В1: № 2000460789536: pH 1.09#[br]В2: № 2000460789536: pH 2.00#[br]В3: № 2000460789536: pH 4.01#[br]В4: № 2000460789536: pH 7.00#[br]В5: № 2000460789536: pH 9.21
+                        div.report__value-box
+                            div.report__header Slope, %#[br]Norm 95-105
+                            div.report__value 98.7
+                                div.report__img
+                        div.report__value-box
+                            div.report__header Offset, mV#[br]Norm ±(0-20)
+                            div.report__value -0.3
+                                div.report__img
+
+                        div.report__solutions В1: № 2000460789536: pH 1.09#[br]В2: № 2000460789536: pH 2.00#[br]В3: № 2000460789536: pH 4.01#[br]В4: № 2000460789536: pH 7.00#[br]В5: № 2000460789536: pH 9.21
+                        div.report__value-box
+                            div.report__header Slope, %#[br]Norm 95-105
+                            div.report__value 98.7
+                                div.report__img
+                        div.report__value-box
+                            div.report__header Offset, mV#[br]Norm ±(0-20)
+                            div.report__value -0.3
+                                div.report__img
+
+                        div.report__solutions В1: № 2000460789536: pH 1.09#[br]В2: № 2000460789536: pH 2.00#[br]В3: № 2000460789536: pH 4.01#[br]В4: № 2000460789536: pH 7.00#[br]В5: № 2000460789536: pH 9.21
+                        div.report__value-box
+                            div.report__header Slope, %#[br]Norm 95-105
+                            div.report__value 98.7
+                                div.report__img
+                        div.report__value-box
+                            div.report__header Offset, mV#[br]Norm ±(0-20)
+                            div.report__value -0.3
+                                div.report__img
+
+                        div.report__solutions В1: № 2000460789536: pH 1.09#[br]В2: № 2000460789536: pH 2.00#[br]В3: № 2000460789536: pH 4.01#[br]В4: № 2000460789536: pH 7.00#[br]В5: № 2000460789536: pH 9.21
+                        div.report__value-box
+                            div.report__header Slope, %#[br]Norm 95-105
+                            div.report__value 90.1
+                                div.report__error
+                        div.report__value-box
+                            div.report__header Offset, mV#[br]Norm ±(0-20)
+                            div.report__value -0.5
+                                div.report__img
+                    div.report__user-column
+                        div.report__header User
+                        div.report__name Иванов Генадий Петрович
+                        div.report__name Петров Иван Генадьевич
+                        div.report__name Петров Генадий Иванович
+                        div.report__name Генадьев Иван Петрович

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Отчёт</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container"> 
+      <div class="filter">
+        <div class="filter__help-text">Enter inventory number, guid or bims id</div>
+        <div class="filter__wrapper">
+          <input placeholder="" class="filter__device-search">
+          <div class="filer__button-background">
+            <button class="filter__search-button">Search</button>
+          </div>
+        </div>
+      </div>
+      <div class="divice">
+        <div class="divice__actions">
+          <div class="divice__info">
+            <div class="divice__logo"></div>
+            <div class="divice__name">Аналитические весы<br> OHAUS Adventurer<br> АХ324 (B715976163)</div>
+          </div>
+          <div class="divice__report-type">
+            <div class="select">
+              <select class="divice__select-list">
+                <option value="1">1 month</option>
+                <option value="2">2 months</option>
+                <option value="3">3 months</option>
+                <option value="4">4 months</option>
+                <option value="5">5 months</option>
+                <option value="6">6 months</option>
+                <option value="7">7 months</option>
+                <option value="8">8 months</option>
+                <option value="9">9 months</option>
+                <option value="10">10 months</option>
+                <option value="11">11 months</option>
+                <option value="12">12 months</option>
+              </select>
+            </div>
+            <div class="divice__radio-button">
+              <input type="radio" id="r1" name="radio" class="divice__radio-input">
+              <label for="r1" class="divice__radio-label">Calibration</label>
+            </div>
+            <div class="divice__radio-button">
+              <input type="radio" id="r2" name="radio" class="divice__radio-input">
+              <label for="r2" class="divice__radio-label">Measuring</label>
+            </div>
+            <div class="divice__radio-button">
+              <input type="radio" id="r3" name="radio" class="divice__radio-input">
+              <label for="r3" class="divice__radio-label">Using                  </label>
+            </div>
+            <button class="divice__report-button">Generate report</button>
+          </div>
+        </div>
+        <div class="divice__information">
+          <div class="divice__text-field"><span class="divice__grey-text">Тип оборудования: <span class="divice__black-text">Весы</span></span><span class="divice__grey-text">Статус: <span class="divice__black-text">Готов к работе</span></span><span class="divice__grey-text">Изготовитель:  <span class="divice__black-text">Ohaus</span></span><span class="divice__grey-text">Модель:  <span class="divice__black-text">AX-123</span></span><span class="divice__grey-text">Ответственное подразделение (ремонт): <span class="divice__black-text">Группа обслуживания<br> лабораторного оборудования</span></span><span class="divice__grey-text">Эксплуатирующее подразделение: <span class="divice__black-text">Химико-аналитическая лаборатория 2.0</span></span><span class="divice__grey-text">МОЛ: <span class="divice__black-text">Иванов Иван Иванович</span></span><span class="divice__grey-text">Территория: <span class="divice__black-text">г. Санкт-Петербург (Нойдорф)</span></span><span class="divice__grey-text">Серийный номер: <span class="divice__black-text">B715976163</span></span><span class="divice__grey-text">GUID: <span class="divice__blue-text">508b2a71-662e-4983-ae0c-3cb0c1cd21c5</span></span><span class="divice__grey-text">Bims ID: <span class="divice__blue-text">49db8db1-585f-4b9e-bbf0-8a59698edc8b</span></span><span class="divice__grey-text">Tam:  <span class="divice__blue-text">А-001234      </span></span></div>
+        </div>
+      </div>
+      <div class="report">
+        <h1>Calibration report</h1>
+        <div class="report__wrapper">
+          <div class="report__data-column">
+            <div class="report__header">Date</div>
+            <div class="report__date">04.10.19<br>10:23</div>
+            <div class="report__date">04.10.19<br>10:23</div>
+            <div class="report__date">04.10.19<br>10:23</div>
+            <div class="report__date">04.10.19<br>10:23</div>
+          </div>
+          <div class="report__data-and-user-column">
+            <div class="report__header">Date, User</div>
+            <div class="report__date">04.10.19<br>10:23
+              <div class="report__name">Иванов Генадий Петрович</div>
+            </div>
+            <div class="report__date">04.10.19<br>10:23
+              <div class="report__name">Петров Иван Генадьевич</div>
+            </div>
+            <div class="report__date">04.10.19<br>10:23
+              <div class="report__name">Петров Генадий Иванович</div>
+            </div>
+            <div class="report__date">04.10.19<br>10:23    
+              <div class="report__name">Генадьев Иван Петрович</div>
+            </div>
+          </div>
+          <div class="report__solutions-column">
+            <div class="report__header">Used buffer solutions</div>
+            <div class="report__solutions">В1: № 2000460789536: pH 1.09<br>В2: № 2000460789536: pH 2.00<br>В3: № 2000460789536: pH 4.01<br>В4: № 2000460789536: pH 7.00<br>В5: № 2000460789536: pH 9.21</div>
+            <div class="report__solutions">В1: № 2000460789536: pH 1.09<br>В2: № 2000460789536: pH 2.00<br>В3: № 2000460789536: pH 4.01<br>В4: № 2000460789536: pH 7.00<br>В5: № 2000460789536: pH 9.21</div>
+            <div class="report__solutions">В1: № 2000460789536: pH 1.09<br>В2: № 2000460789536: pH 2.00<br>В3: № 2000460789536: pH 4.01<br>В4: № 2000460789536: pH 7.00<br>В5: № 2000460789536: pH 9.21</div>
+            <div class="report__solutions">В1: № 2000460789536: pH 1.09<br>В2: № 2000460789536: pH 2.00<br>В3: № 2000460789536: pH 4.01<br>В4: № 2000460789536: pH 7.00<br>В5: № 2000460789536: pH 9.21</div>
+          </div>
+          <div class="report__slope-column">
+            <div class="report__header">Slope, %<br>Norm 95-105</div>
+            <div class="report__value">98.7
+              <div class="report__img"></div>
+            </div>
+            <div class="report__value">98.7
+              <div class="report__img"></div>
+            </div>
+            <div class="report__value">98.7
+              <div class="report__img"></div>
+            </div>
+            <div class="report__value">90.1
+              <div class="report__error"></div>
+            </div>
+          </div>
+          <div class="report__offset-column">
+            <div class="report__header">Offset, mV<br>Norm ±(0-20)</div>
+            <div class="report__value">-0.3
+              <div class="report__img"></div>
+            </div>
+            <div class="report__value">-0.3
+              <div class="report__img"></div>
+            </div>
+            <div class="report__value">-0.3
+              <div class="report__img"></div>
+            </div>
+            <div class="report__value">-0.5
+              <div class="report__img"></div>
+            </div>
+          </div>
+          <div class="report__slope-offset-mobile">
+            <div class="report__header">Used buffer solutions</div>
+            <div class="report__solutions">В1: № 2000460789536: pH 1.09<br>В2: № 2000460789536: pH 2.00<br>В3: № 2000460789536: pH 4.01<br>В4: № 2000460789536: pH 7.00<br>В5: № 2000460789536: pH 9.21</div>
+            <div class="report__value-box">
+              <div class="report__header">Slope, %<br>Norm 95-105</div>
+              <div class="report__value">98.7
+                <div class="report__img"></div>
+              </div>
+            </div>
+            <div class="report__value-box">
+              <div class="report__header">Offset, mV<br>Norm ±(0-20)</div>
+              <div class="report__value">-0.3
+                <div class="report__img"></div>
+              </div>
+            </div>
+            <div class="report__solutions">В1: № 2000460789536: pH 1.09<br>В2: № 2000460789536: pH 2.00<br>В3: № 2000460789536: pH 4.01<br>В4: № 2000460789536: pH 7.00<br>В5: № 2000460789536: pH 9.21</div>
+            <div class="report__value-box">
+              <div class="report__header">Slope, %<br>Norm 95-105</div>
+              <div class="report__value">98.7
+                <div class="report__img"></div>
+              </div>
+            </div>
+            <div class="report__value-box">
+              <div class="report__header">Offset, mV<br>Norm ±(0-20)</div>
+              <div class="report__value">-0.3
+                <div class="report__img"></div>
+              </div>
+            </div>
+            <div class="report__solutions">В1: № 2000460789536: pH 1.09<br>В2: № 2000460789536: pH 2.00<br>В3: № 2000460789536: pH 4.01<br>В4: № 2000460789536: pH 7.00<br>В5: № 2000460789536: pH 9.21</div>
+            <div class="report__value-box">
+              <div class="report__header">Slope, %<br>Norm 95-105</div>
+              <div class="report__value">98.7
+                <div class="report__img"></div>
+              </div>
+            </div>
+            <div class="report__value-box">
+              <div class="report__header">Offset, mV<br>Norm ±(0-20)</div>
+              <div class="report__value">-0.3
+                <div class="report__img"></div>
+              </div>
+            </div>
+            <div class="report__solutions">В1: № 2000460789536: pH 1.09<br>В2: № 2000460789536: pH 2.00<br>В3: № 2000460789536: pH 4.01<br>В4: № 2000460789536: pH 7.00<br>В5: № 2000460789536: pH 9.21</div>
+            <div class="report__value-box">
+              <div class="report__header">Slope, %<br>Norm 95-105</div>
+              <div class="report__value">90.1
+                <div class="report__error"></div>
+              </div>
+            </div>
+            <div class="report__value-box">
+              <div class="report__header">Offset, mV<br>Norm ±(0-20)</div>
+              <div class="report__value">-0.5
+                <div class="report__img"></div>
+              </div>
+            </div>
+          </div>
+          <div class="report__user-column">
+            <div class="report__header">User</div>
+            <div class="report__name">Иванов Генадий Петрович</div>
+            <div class="report__name">Петров Иван Генадьевич</div>
+            <div class="report__name">Петров Генадий Иванович</div>
+            <div class="report__name">Генадьев Иван Петрович</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
